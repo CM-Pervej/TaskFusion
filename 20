@@ -1,0 +1,9 @@
+the super admin generat the admin by his name, email, contact, role (2 from roles) and after registration the admin will get an email with the admin registration page. where he will fill other data like company name (to company tables), password, company unique information to the same table (provide admin and company table).
+provide me html and php files while the super admin will generate an admin and pass email to him. remeber the from email will be the super admins email so first fetch the super admin data from the database.
+CREATE TABLE roles (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  role VARCHAR(255) NOT NULL UNIQUE,
+  role_description TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

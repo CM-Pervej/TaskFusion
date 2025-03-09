@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System Timeline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@1.23.2/dist/full.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl font-bold text-center">Timeline & Work Process for Building the Task Management System</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-6">
+
+        <!-- Phase 1: Initial Setup & User Registration -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Phase 1: Initial Setup & User Registration (1–2 Weeks)</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">1.1 Super Admin Dashboard (1st Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Build a Super Admin login page, Super Admin can create Admins (Owners), Database setup for users, companies.</li>
+                    <li>Works: Create Super Admin login page, Admin creation page (with the ability to register a company and assign an Admin role), Implement JWT authentication for login, Send email confirmation to Admins after account creation.</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">1.2 Admin (Owner) Registration (2nd Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Admin receives access to company registration page, Admin registers the company and their profile.</li>
+                    <li>Works: Create Company Registration page, Implement image upload and other personal information fields for Admin, Assign Admin role after successful registration.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Phase 2: User & Team Management -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Phase 2: User & Team Management (2–3 Weeks)</h2>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">2.1 Admin Dashboard & User Management (2nd–3rd Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Admin logs in to Admin Dashboard to manage their company and users.</li>
+                    <li>Works: Create Admin Dashboard page, Managing company details, Viewing and managing users (Add, Edit, Assign Roles, Delete), Admin assigns teams, Create team management page, Admin assigns managers to teams.</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">2.2 Team & User Roles Management (2nd–3rd Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Admin can assign users to teams with specific roles (Manager, Developer, etc.).</li>
+                    <li>Works: Create Team Management page, Create User Management page where Admin assigns users to specific teams, Implement role-based access control.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Phase 3: Project & Task Management -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Phase 3: Project & Task Management (3–4 Weeks)</h2>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">3.1 Project Management Dashboard (3rd Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Manager accesses a project dashboard to create projects under a team.</li>
+                    <li>Works: Create Project Management page for adding and editing projects, Manager assigns tasks to users, Create task list for each project.</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">3.2 Task Assignment & Tracking (4th Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Task management with task assignment, deadlines, status updates, and comments.</li>
+                    <li>Works: Create Task Assignment page, Assign tasks to users, Users can update task status, Task comment section for discussions and updates.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Phase 4: Notifications & Activity Logs -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Phase 4: Notifications & Activity Logs (4–5 Weeks)</h2>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">4.1 Notification System (4th Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Notify users of important events (task assignments, comments, etc.).</li>
+                    <li>Works: Create Notification Center, Implement email notifications for important updates.</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">4.2 Activity Log (5th Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Log all user activity for transparency and auditing.</li>
+                    <li>Works: Create Activity Log page for tracking actions, Super Admin and Admin can view logs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Phase 5: Testing, Refining, and Deployment -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Phase 5: Testing, Refining, and Deployment (5–6 Weeks)</h2>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">5.1 User Testing & Bug Fixing (5th Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Test the platform with users to identify bugs and missing features.</li>
+                    <li>Works: Perform alpha testing, Fix any bugs, refine user interface, Adjust user permissions and roles based on feedback.</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">5.2 Final Touches & Deployment (6th Week)</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Ensure the system is fully functional, deploy to production.</li>
+                    <li>Works: Final UI/UX adjustments, Deploy to production server, Perform final testing to ensure everything works.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Phase 6: Post-Launch Monitoring -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Phase 6: Post-Launch Monitoring & Support (Ongoing)</h2>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">6.1 Post-Launch Monitoring & Support</h3>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Setup: Monitor the system for issues and performance.</li>
+                    <li>Works: Collect feedback from users and admins, Make improvements based on user feedback, Provide customer support for any issues encountered.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Summary of Pages -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600">Summary of Pages Created</h2>
+            <table class="table table-zebra w-full mt-4">
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Super Admin Dashboard</td>
+                        <td>Admin creation, company registration</td>
+                    </tr>
+                    <tr>
+                        <td>Admin (Owner) Dashboard</td>
+                        <td>Company details, user management</td>
+                    </tr>
+                    <tr>
+                        <td>Team Management Page</td>
+                        <td>Create/edit teams, assign roles</td>
+                    </tr>
+                    <tr>
+                        <td>User Management Page</td>
+                        <td>Add/edit users, assign to teams, set roles</td>
+                    </tr>
+                    <tr>
+                        <td>Project Management Page</td>
+                        <td>Create/edit projects, assign managers</td>
+                    </tr>
+                    <tr>
+                        <td>Task Management Page</td>
+                        <td>Assign tasks, set deadlines, update status</td>
+                    </tr>
+                    <tr>
+                        <td>Notification Center</td>
+                        <td>Show task updates, user mentions, and status changes</td>
+                    </tr>
+                    <tr>
+                        <td>Activity Logs</td>
+                        <td>Track system activity for auditing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+</body>
+</html>
