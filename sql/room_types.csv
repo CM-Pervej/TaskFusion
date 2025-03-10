@@ -1,0 +1,12 @@
+id,room_category,description,room_type
+1,Standard Room,Basic and comfortable,Single Room
+2,Standard Room,Basic with double bed,Double Room
+3,Standard Room,Two separate single beds,Twin Room
+4,Luxury & Premium,Spacious room with extra amenities,Deluxe Room
+5,Luxury & Premium,Includes a separate living area,Suite
+6,Luxury & Premium,For business travelers,Executive Suite
+7,Luxury & Premium,Top luxury experience,Presidential Suite
+8,Specialty Rooms,Ideal for families,Family Room
+9,Specialty Rooms,Two connected rooms,Connecting Rooms
+10,Specialty Rooms,Designed for accessibility,Accessible Room
+11,Specialty Rooms,Romantic getaway,Honeymoon Suite
