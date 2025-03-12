@@ -8,7 +8,7 @@
 </head>
 <body>
     <aside class="w-64 bg-blue-100 text-black py-5 pl-5 min-h-screen fixed">
-        <h2 class="text-2xl font-bold mb-5 text-blue-900">Paaru Royal Resort</h2>
+        <h2 class="text-2xl font-bold mb-5 text-blue-900 font-">Paaru Royal Resort</h2>
         <ul class="text-lg text-right">
             <!-- Dashboard Menu -->
             <li><a href="/taskfusion/dashboard.php" class="block py-2 px-7 hover:bg-blue-700 hover:text-white">Dashboard</a></li>
@@ -27,8 +27,8 @@
                 <a href="#" class="block py-2 px-7 hover:border-r hover:border-black hover:bg-blue-700 hover:text-white">Manage Rooms</a>
                 <ul class="absolute left-60 -ml-1 top-0 hidden group-hover:block bg-blue-700 w-max text-left border-l border-blue-700">
                     <li><a href="/taskfusion/rooms/all_rooms.php" class="block text-white py-2 px-7 hover:bg-black">Manage Rooms</a></li>
-                    <li><a href="#" class="block text-white py-2 px-7 hover:bg-black">Available Rooms</a></li>
-                    <li><a href="#" class="block text-white py-2 px-7 hover:bg-black">Unavailable Rooms</a></li>
+                    <li><a href="/taskfusion/rooms/all_rooms.php?room_status=0" class="block text-white py-2 px-7 hover:bg-black">Available Rooms</a></li>
+                    <li><a href="/taskfusion/rooms/all_rooms.php?room_status=1" class="block text-white py-2 px-7 hover:bg-black">Unavailable Rooms</a></li>
                 </ul>
             </li>
 

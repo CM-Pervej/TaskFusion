@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paaru Royal Resort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-2xl font-bold text-gray-700">Paaru Royal Resort</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#rooms" class="hover:text-blue-500">Rooms</a></li>
+                <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                <li><a href="login.php" class="px-4 py-2 bg-blue-500 text-white rounded-md">Login</a></li>
+            </ul>
+            <button class="md:hidden block p-2 bg-blue-500 text-white rounded-md">Menu</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?hotel,resort')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 text-white">
+            <h1 class="text-5xl font-bold">Welcome to Paaru Royal Resort</h1>
+            <p class="mt-4 text-lg">Experience luxury and comfort like never before.</p>
+            <a href="booking.php" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center">Our Rooms</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-md rounded-md p-4">
+                <img src="https://source.unsplash.com/400x300/?luxury,room" alt="Room" class="rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Deluxe Room</h3>
+                <p class="text-gray-500 mt-2">A spacious room with a stunning sea view.</p>
+                <a href="booking.php" class="block mt-4 text-blue-500 font-semibold">Book Now</a>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-4">
+                <img src="https://source.unsplash.com/400x300/?hotel,bedroom" alt="Room" class="rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Suite Room</h3>
+                <p class="text-gray-500 mt-2">Luxury at its best with all modern amenities.</p>
+                <a href="booking.php" class="block mt-4 text-blue-500 font-semibold">Book Now</a>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-4">
+                <img src="https://source.unsplash.com/400x300/?room,hotel" alt="Room" class="rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Standard Room</h3>
+                <p class="text-gray-500 mt-2">A cozy and affordable stay option.</p>
+                <a href="booking.php" class="block mt-4 text-blue-500 font-semibold">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Our Services</h2>
+            <div class="mt-8 grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-semibold">Free Wi-Fi</h3>
+                    <p class="text-gray-500 mt-2">Stay connected with high-speed internet.</p>
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-semibold">24/7 Room Service</h3>
+                    <p class="text-gray-500 mt-2">Delicious meals delivered to your room.</p>
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-semibold">Swimming Pool</h3>
+                    <p class="text-gray-500 mt-2">Relax and refresh at our premium pool.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center">Contact Us</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            <div>
+                <p class="text-gray-500">Address: 123 Beachside, Paaru City</p>
+                <p class="text-gray-500">Phone: +123 456 7890</p>
+                <p class="text-gray-500">Email: info@paaruhotel.com</p>
+            </div>
+            <form class="bg-white p-6 rounded-md shadow-md">
+                <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-md mb-4">
+                <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-md mb-4">
+                <textarea placeholder="Your Message" class="w-full p-3 border rounded-md mb-4"></textarea>
+                <button type="submit" class="px-6 py-3 bg-blue-500 text-white rounded-md">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Paaru Royal Resort. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -35,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $payload = [
                 "iss" => "yourdomain.com",
                 "iat" => time(),
-                "exp" => time() + 3600, // 1 hour expiration
+                // "exp" => time() + 3600, // 1 hour expiration
+                "exp" => time() + TOKEN_EXPIRATION, // Use the constant from config.php
                 "sub" => $user['id'],
                 "email" => $user['email'],
                 "role" => $user['user_role']
